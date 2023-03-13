@@ -125,7 +125,7 @@ body {
 	font-weight: bold;
 }
 .nav-links li :hover {
-	color: white;
+	color: rgb(12, 112, 152);
 }
 
 header {
@@ -373,10 +373,155 @@ header {
 		max-width: 700px;
 	}
 }
+/*gallery*/
+.section-padding {
+	padding: 35px 0;
+}
+
+.section_heading {
+	margin-bottom: 30px;
+}
+
+.section_heading h2 {
+	color: red;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.section_heading h2 span {
+	color: yellow;
+}
+
+.section_heading p {
+	font-size: 16px;
+	margin: 10px 0 5px;
+}
+
+.single-blog {
+	transition: all 0.3s ease 0s;
+}
+
+.single-blog:hover {
+	transform: translateY(-10px);
+}
+
+.single-blog .post-img {
+	position: relative;
+}
+
+.single-blog .post-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+.single-blog .post-img:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: rgb(64, 138, 185);
+	transition: all 0.3s ease 0s;
+}
+
+.single-blog:hover .post-img:after {
+	opacity: 0.5;
+}
+
+.single-blog .single_blog {
+	border-top: none;
+	padding: 25px 20px 25px;
+	background: white;
+	position: relative;
+}
+
+.single-blog .post-title {
+	margin: 0 0 15px 0;
+	font-size: 20px;
+	color: green;
+	display: inline-block;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+
+.btn-area a {
+	background: linear-gradient(to right, rgb(40, 90, 170)), rgb(44, 76, 112);
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	padding: 11px 22px;
+	margin: 10px 0 10px;
+	border: none;
+	font-weight: 500;
+	color: white;
+	text-transform: capitalize;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+/*restaurant design page*/
+.restaurant {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+	width: 100%;
+	margin: 10rem auto 0 auto;
+}
+
+.restaurant img {
+	height: 500px;
+}
+
+.restaurant h1 {
+	color: #305981;
+	margin: 0;
+}
+
+.restaurant p {
+	color: #183447;
+	text-align: left;
+	margin-right: 30px;
+}
+
+.design {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	width: 100%;
+	margin: 10rem auto 0 auto;
+}
+.design img {
+	height: 700px;
+}
+
+.design h1 {
+	color: #305981;
+	margin: 0;
+}
+
+/* .nomi-images {
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	width: 100%;
+	margin: 10rem auto 0 auto;
+}
+
+.nomi-images img {
+	height: 700px;
+}
+
+.nomi-images h1 {
+	color: #305981;
+	margin: 0;
+} */
 
 /* office design page */
 .section {
-	background-color: whitesmoke;
+	background-color: white;
 	display: flex;
 	justify-content: space-between;
 	padding: 40px;
@@ -396,6 +541,10 @@ header {
 	color: #183447;
 	text-align: left;
 	margin-right: 15px;
+}
+
+.col img {
+	height: 900px;
 }
 /* About Page */
 
