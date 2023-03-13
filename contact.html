@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>Shuyi Cen's Portfolio</title>
+		<link rel="shortcut icon" type="image/png" href="./image/logo.png" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--nav-->
+
+		<nav class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="./image/logo.png" /></a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<img src="./image/menu-btn.png" class="menu-btn" />
+		</nav>
+
+		<!-- end nav -->
+		<header>
+			<div class="contact">
+				<h2>Keep in Touch!</h2>
+				<div class="line"></div>
+				<h3>Name: Shuyi Cen<br />Email: sc3948@drexel.edu</h3>
+			</div>
+		</header>
+
+		<script>
+			const menuBtn = document.querySelector(".menu-btn");
+			const navlinks = document.querySelector(".nav-links");
+
+			menuBtn.addEventListener("click", () => {
+				navlinks.classList.toggle("mobile-menu");
+			});
+		</script>
+
+		<section class="footer">
+			<p>copyright @ 2023 Shuyi Cen</p>
+		</section>
+	</body>
+</html>
